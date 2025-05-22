@@ -6,7 +6,17 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Player score is shown on the HUD. -->
+  <div id="hud">Score: 0</div>
+
+  <!-- Canvas main game. -->
   <canvas id="gameCanvas" width="800" height="800"></canvas>
+
+  <!-- In accordance with browser guidelines, background music begins playing at first click. -->
+  <audio id="bgMusic" src="background.mp3" loop></audio>
+  <!-- Ctrl+click is used to play the move sound effect. -->
+  <audio id="moveSound" src="move.wav"></audio>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,12 +1,25 @@
+/* Fit everything both horizontally and vertically */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: #222;
-  }
-  canvas {
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  color: #fff;  /* HUD text color */
+  font-family: sans-serif;
+}
+
+/* Basic HUD styling */
+#hud {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Sketching and pointer cursor */
+canvas {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  cursor: pointer; /* Represents clickable area */
+}
